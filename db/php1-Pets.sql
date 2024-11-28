@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS php1_anubizz_pets
+CREATE DATABASE IF NOT EXISTS php2_anubizz_pets
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 
-USE php1_anubizz_pets;
+USE php2_anubizz_pets;
 
 -- Creación de la tabla mascota 
 CREATE TABLE IF NOT EXISTS mascota (

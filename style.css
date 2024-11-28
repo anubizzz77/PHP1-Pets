@@ -30,12 +30,12 @@ form {
     padding: 2rem; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    width: 400px; /* Ancho fijo para el formulario */
+    width: 300px; /* Ancho reducido para el formulario */
 }
 
 label {
     display: block;
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem; /* Espacio superior y margen inferior reducido */
 }
 
 input[type="text"],
@@ -54,13 +54,13 @@ input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #007bff; /* Color de borde al enfocar */
+    border-color: #95329a; /* Color de borde al enfocar */
     outline: none; /* Sin contorno */
 }
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: #007bff; /* Color de fondo del botón */
+    background-color: #ac8ccb; /* Color de fondo del botón */
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 4px; /* Bordes redondeados */
@@ -72,10 +72,49 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    background-color: #823c9a; /* Color de fondo al pasar el mouse */
+}
+
+fieldset {
+    border: none; /* Sin borde para el fieldset */
+    margin: 1rem 0; /* Margen superior e inferior */
 }
 
 legend {
-    margin-top: 1rem; /* Espacio superior para el legend */
+    margin-bottom: 0.5rem; /* Espacio inferior para el legend */
     font-weight: bold; /* Negrita para el legend */
+}
+
+/* Estilos para la tabla de mascotas */
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 2rem 0; /* Margen superior e inferior */
+    border-collapse: collapse; /* Colapsar bordes */
+    background-color: white; /* Fondo blanco para la tabla */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+th, td {
+    padding: 1rem; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para encabezados */
+    font-weight: bold; /* Negrita para encabezados */
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Color de fondo al pasar el mouse sobre la fila */
+}
+/* Estilos específicos para los inputs de género */
+label input[type="radio"] {
+    margin-right: 0.5rem; /* Espacio a la derecha del input */
+}
+
+.no-results {
+    text-align: center; /* Centrar el texto */
+    color: #666; /* Color gris para el mensaje */
+    margin: 1rem 0; /* Margen superior e inferior */
 }
