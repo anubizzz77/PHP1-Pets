@@ -4,10 +4,7 @@ include "./conexion.php";
 if (isset($_GET['eli'])) {
     
     $id_mascota = mysqli_real_escape_string($link, $_GET['eli']);
-    
-    echo "ID de mascota a eliminar: " . $id_mascota; 
 
-   
     $check_sql = "SELECT * FROM mascota WHERE id_mascota='$id_mascota'";
     $check_result = mysqli_query($link, $check_sql);
     
@@ -16,8 +13,7 @@ if (isset($_GET['eli'])) {
     } else {
         
         $sql = "DELETE FROM mascota WHERE id_mascota='$id_mascota'";
-        
-        echo "Consulta SQL: " . $sql; 
+         
         
         if (mysqli_query($link, $sql)) {
             echo "<script>alert('Se eliminó con éxito');</script>";
@@ -28,7 +24,6 @@ if (isset($_GET['eli'])) {
 } else {
     echo "<script>alert('No se proporcionó un ID para eliminar.');</script>";
 }
-
 
 echo '<meta http-equiv="refresh" content="2;URL=modificar.php">';
 ?>

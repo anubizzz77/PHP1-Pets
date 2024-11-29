@@ -38,7 +38,10 @@ ini_set('display_errors', 1);
         </fieldset>
 
         <label id="nombre_cliente">Nombre del Dueño: <input id="nombre_cliente" name="nombre_cliente" type="text" required /></label>
-        <label id="fecha_nacimiento">Fecha de Nacimiento: <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required /></label>
+        <label id="fecha_nacimiento">Fecha de Nacimiento: 
+            <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required 
+                   max="<?php echo date('Y-m-d'); ?>" /> 
+        </label>
         
         <input id="registrar" name="Registrar" type="submit" />
         <input id="limpiar" name="Limpiar" type="reset" />
