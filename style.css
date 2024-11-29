@@ -8,8 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, sans-serif; /* Mejora la legibilidad */
-    background-color: #f9f9f9; /* Color de fondo suave */
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
 }
 
 .menu > ul {
@@ -26,95 +26,95 @@ body {
 }
 
 form {
-    background-color: white; /* Fondo blanco para el formulario */
-    padding: 2rem; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    width: 300px; /* Ancho reducido para el formulario */
+    background-color: white; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 300px;
 }
 
 label {
     display: block;
-    margin: 1rem 0 0.5rem; /* Espacio superior y margen inferior reducido */
+    margin: 1rem 0 0.5rem;
 }
 
 input[type="text"],
 input[type="date"],
 select,
 textarea {
-    width: 100%; /* Ancho completo */
-    padding: 0.5rem; /* Espaciado interno */
-    margin-top: 0.5rem; /* Espacio entre el label y el input */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 4px; /* Bordes redondeados */
-    transition: border-color 0.3s; /* Transición suave para el borde */
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    transition: border-color 0.3s; 
 }
 
 input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #95329a; /* Color de borde al enfocar */
-    outline: none; /* Sin contorno */
+    border-color: #95329a;
+    outline: none;
 }
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: #ac8ccb; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 0.5rem 1rem; /* Espaciado interno */
-    cursor: pointer; /* Cursor de puntero */
-    margin-top: 1rem; /* Espacio superior */
-    transition: background-color 0.3s; /* Transición suave para el fondo */
+    background-color: #ac8ccb; 
+    color: white; 
+    border: none; 
+    border-radius: 4px;
+    padding: 0.5rem 1rem; 
+    cursor: pointer; 
+    margin-top: 1rem;
+    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #823c9a; /* Color de fondo al pasar el mouse */
+    background-color: #823c9a;
 }
 
 fieldset {
-    border: none; /* Sin borde para el fieldset */
-    margin: 1rem 0; /* Margen superior e inferior */
+    border: none;
+    margin: 1rem 0;
 }
 
 legend {
-    margin-bottom: 0.5rem; /* Espacio inferior para el legend */
-    font-weight: bold; /* Negrita para el legend */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-/* Estilos para la tabla de mascotas */
+
 table {
-    width: 80%; /* Ancho de la tabla */
-    margin: 2rem 0; /* Margen superior e inferior */
-    border-collapse: collapse; /* Colapsar bordes */
-    background-color: white; /* Fondo blanco para la tabla */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 80%;
+    margin: 2rem 0; 
+    border-collapse: collapse; 
+    background-color: white; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    padding: 1rem; /* Espaciado interno */
-    text-align: left; /* Alinear texto a la izquierda */
-    border-bottom: 1px solid #ccc; /* Borde inferior */
+    padding: 1rem;
+    text-align: left; 
+    border-bottom: 1px solid #ccc; 
 }
 
 th {
-    background-color: #f2f2f2; /* Color de fondo para encabezados */
-    font-weight: bold; /* Negrita para encabezados */
+    background-color: #f2f2f2;
+    font-weight: bold;
 }
 
 tr:hover {
-    background-color: #f9f9f9; /* Color de fondo al pasar el mouse sobre la fila */
+    background-color: #f9f9f9; 
 }
-/* Estilos específicos para los inputs de género */
+
 label input[type="radio"] {
-    margin-right: 0.5rem; /* Espacio a la derecha del input */
+    margin-right: 0.5rem; 
 }
 
 .no-results {
-    text-align: center; /* Centrar el texto */
-    color: #666; /* Color gris para el mensaje */
-    margin: 1rem 0; /* Margen superior e inferior */
+    text-align: center; 
+    color: #666; 
+    margin: 1rem 0; 
 }
