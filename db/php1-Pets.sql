@@ -4,7 +4,7 @@ COLLATE utf8mb4_general_ci;
 
 USE php2_anubizz_pets;
 
--- Creación de la tabla mascota 
+
 CREATE TABLE IF NOT EXISTS mascota (
     id_mascota INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(20) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS mascota (
     fecha_nacimiento DATE NOT NULL
 );
 
--- Inserción de datos en la tabla mascota
+
 INSERT INTO mascota (nombre, tipo, raza, sexo, nombre_cliente, fecha_nacimiento)
 VALUES
 ('Rex', 'perro', 'Pastor Alemán', 'M', 'Claire Whiteford', '2020-05-15'),
