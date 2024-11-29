@@ -18,13 +18,13 @@
             <th>Fecha de Nacimiento</th>
         </tr>
         <?php
-        // Consulta para obtener todas las mascotas
+        
         $sql = "SELECT * FROM mascota";
-        $result = mysqli_query($link, $sql); // ejecuto la consulta
+        $result = mysqli_query($link, $sql); 
 
-        // Verificar si hay resultados
+        
         if (mysqli_num_rows($result) > 0) {
-            // Recorrer los resultados y mostrarlos en la tabla
+            
             while ($row = mysqli_fetch_assoc($result)) {
         ?>
         <tr>

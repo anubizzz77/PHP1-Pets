@@ -29,12 +29,12 @@
                 <th>Fecha de Nacimiento</th>
             </tr>
             <?php
-            // Consulta para buscar mascotas por ID
+            
             $id_buscar = mysqli_real_escape_string($link, $_POST['buscar']);
             $sql = "SELECT * FROM mascota WHERE id_mascota = '$id_buscar'";
-            $result = mysqli_query($link, $sql); // ejecuto la consulta
+            $result = mysqli_query($link, $sql); 
             
-            // Verificar si hay resultados
+            
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
             ?>

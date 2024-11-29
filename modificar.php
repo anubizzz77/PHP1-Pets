@@ -10,14 +10,6 @@
 <body>
     <?php include './menu.php'; ?>
     
-    <form method="POST" name="form1">
-        <div class="buscador">
-            <label for="buscar">Buscar por ID de Mascota: </label>
-            <input type="text" name="buscar" id="buscar" />
-            <input type="submit" value="Buscar" />
-        </div>
-    </form>
-
     <table>
         <tr>
             <th>ID Mascota</th>
@@ -30,17 +22,11 @@
             <th>ACCIONES</th>
         </tr>
         <?php
-        // Consulta para buscar mascotas
-        if (isset($_POST['buscar'])) {
-            $id_buscar = mysqli_real_escape_string($link, $_POST['buscar']);
-            $sql = "SELECT * FROM mascota WHERE id_mascota = '$id_buscar'";
-        } else {
-            $sql = "SELECT * FROM mascota"; // Si no hay búsqueda, selecciona todas las mascotas
-        }
+        $sql = "SELECT * FROM mascota"; 
         
-        $result = mysqli_query($link, $sql); // ejecuto la consulta
+        $result = mysqli_query($link, $sql); 
         
-        // Verificar si hay resultados
+        
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
         ?>
